@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de films</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Recherche de films</h1>
+
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Entrez un titre de film..." required>
+        <button type="submit">Rechercher</button>
+    </form>
+
+    <div id="movies-list"></div>
+    <div id="pagination" style="display: none;">
+        <button id="prev-page" disabled>Précédent</button>
+        <span id="current-page">1</span> / <span id="total-pages">1</span>
+        <button id="next-page" disabled>Suivant</button>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>
